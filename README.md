@@ -1,4 +1,4 @@
-# LScD-LEICESTER-SCIENTIFIC-DICTIONARY-CREATION
+# LScD-LEICESTER-SCIENTIFIC-DICTIONARY
 
 This repository contains R codes for creation, modification and usage of LEICESTER SCIENTIFIC DICTIONARY (LScD). There are several isolated scripts in my code. Detailed description of each script is presented in following sections:
 
