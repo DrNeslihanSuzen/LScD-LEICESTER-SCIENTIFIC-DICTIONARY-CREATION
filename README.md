@@ -4,7 +4,7 @@ This repository contains R codes for creation, modification and usage of LEICEST
 
 LEICESTER SCIENTIFIC DICTIONARY (LScD) CREATION
 
-#LScD (LEICESTER SCIENTIFIC DICTIONARY) CREATION
+# LScD (LEICESTER SCIENTIFIC DICTIONARY) CREATION
 This repository contains R code to create a dictionary from a corpus of documents
 
 ## What is 'LScD_Creation.R'?
