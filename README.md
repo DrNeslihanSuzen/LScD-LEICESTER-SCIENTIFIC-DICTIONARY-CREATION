@@ -13,13 +13,14 @@ This repository contains R code to create a dictionary from a corpus of document
 The code is written for building the LScD from the LSC to be used by Neslihan Suzen for her PhD project, and it can be used for other corpora for a wide verity of applications that include pre-processing the collection of texts, creating DTM and producing a list of words from the collection of texts. The code can be also used to reproduce the LScD.
 The code is written for building the LScD from the LSC to be used by Neslihan Suzen for her PhD project [1], and it can be used for other corpora for a wide verity of applications that include pre-processing the collection of texts, creating DTM and producing a list of words from the collection of texts. The code can be also used to reproduce the LScD.
 
-Use of the LSC is subject to acceptance of request of the link by email. To access the LSC for research purposes, please email to ns433@le.ac.uk. For more information, see https://doi.org/10.25392/leicester.data.9449639.v1. LScD and related files can be found in https://doi.org/10.25392/leicester.data.9746900.v1.
+Use of the LSC is subject to acceptance of request of the link by email. To access the LSC for research purposes, please email to n553@le.ac.uk or suzenneslihan@hotmail.com. For more information, see https://doi.org/10.25392/leicester.data.9449639.v1. LScD and related files can be found in https://doi.org/10.25392/leicester.data.9746900.v1.
 
 ## Usage for 'LScD_Creation.R'
 'LScD_Creation.R' can be easily downloaded from GitHub.
 The code requires the following R packages: tm, SnowballC, slam, plyr. Packages can be installed by
     install.packages(c("tm","SnowballC","slam","plyr"))
 'LScD_Creation.R' contains 4 parameters of paths 'sourceDir', 'outDirectory', 'prefFileName' and 'substFileName' described below:
+
      sourceDir     : Directory with source files (.csv files)
      outDirectory  : Directory to write metadata files and processed documents
      prefFileName  : Directory for the file 'List of prefixes'
