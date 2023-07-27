@@ -13,12 +13,15 @@ This repository contains R code to create a dictionary from a corpus of document
 The code is written for building the LScD from the LSC to be used by Neslihan Suzen for her PhD project, and it can be used for other corpora for a wide verity of applications that include pre-processing the collection of texts, creating DTM and producing a list of words from the collection of texts. The code can be also used to reproduce the LScD.
 The code is written for building the LScD from the LSC to be used by Neslihan Suzen for her PhD project [1], and it can be used for other corpora for a wide verity of applications that include pre-processing the collection of texts, creating DTM and producing a list of words from the collection of texts. The code can be also used to reproduce the LScD.
 
-Use of the LSC is subject to acceptance of request of the link by email. To access the LSC for research purposes, please email to n553@le.ac.uk or suzenneslihan@hotmail.com. For more information, see https://doi.org/10.25392/leicester.data.9449639.v1. LScD and related files can be found in https://doi.org/10.25392/leicester.data.9746900.v1.
+Use of the LSC is subject to acceptance of request of the link by email. To access the LSC for research purposes, please email to ns553@le.ac.uk or suzenneslihan@hotmail.com. For more information, see https://doi.org/10.25392/leicester.data.9449639.v1. LScD and related files can be found in https://doi.org/10.25392/leicester.data.9746900.v1.
 
 ## Usage for 'LScD_Creation.R'
 'LScD_Creation.R' can be easily downloaded from GitHub.
+
 The code requires the following R packages: tm, SnowballC, slam, plyr. Packages can be installed by
+
     install.packages(c("tm","SnowballC","slam","plyr"))
+    
 'LScD_Creation.R' contains 4 parameters of paths 'sourceDir', 'outDirectory', 'prefFileName' and 'substFileName' described below:
 
      sourceDir     : Directory with source files (.csv files)
@@ -26,8 +29,10 @@ The code requires the following R packages: tm, SnowballC, slam, plyr. Packages 
      prefFileName  : Directory for the file 'List of prefixes'
      substFileName : Directory for the file 'List of substitution'
   
-These locations should be changed by the user for reading and writing files. 
+These locations should be changed by the user for reading and writing files.
+
 The code consists of three functions, 'pattern' to create gsub pattern for list of prefixes, 'preprocessing' to process the collection of texts and 'Split_abstract' to split the dataframe of abstracts into several sub-dataframes for running the function 'Preprocessing' faster. Preprocessing function consists the following operations:
+
    1.	**Removing punctuations and special characters:** This is the process of substitution of all non -alphanumeric characters by space exclusing '-' 
    2.	**Lowercasing the text data:** Entire collection of texts are converted to lowercase. 
    3.	**Uniting prefixes of words:** Words containing prefixes joined with character "-" are united as a word. The list of prefixes united for this research are listed in the file "list_of_prefixes.csv" in LSC folder. 
@@ -41,6 +46,7 @@ The code consists of three functions, 'pattern' to create gsub pattern for list 
 ## Guide for Usage the Code
      
 This guide is for building LScD from LSC:
+
     1. Install libraries
     2. Prepare (or use) the list of words for substitution and list of prefixes  
     3. Change paths of directories for reading and writing files, and list of substitution and prefixes
@@ -62,6 +68,8 @@ All output files are saved in the 'outDirectory'. The outputs of the code are li
   ## Warning
  
 The code can be applied for list of texts from any source with changes of parameter. We note that the structure of the corpus such as file format and names (also the position) of fields should be taken into account to apply our code.
-For LSC, abstracts must be in the THIRD column. 
+For LSC, abstracts must be in the THIRD column.
+
 ## References 
+
 [1] Suzen, N., Mirkes, E. M., & Gorban, A. N. (2019). LScDC-new large scientific dictionary. arXiv preprint arXiv:1912.06858.
